@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+        <link rel="stylesheet"href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        
+        <link rel="stylesheet"href="main.css"type="text/css">
+       
+       <link rel="stylesheet" href="assets/fontawesome-free-5.13.0-web/css/all.min.css">
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
+       
+<!-- script za grafik -->
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "dark2",  //"light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Results"
+
+	},
+	axisY: {
+		
+	},
+	data: [{        
+
+		type: "column",  
+		showInLegend: true, 
+		legendMarkerColor: "#00ccff",
+		legendText: "Game of the Year",
+		dataPoints: [      
+			{ y: 20, label: "Cyberpunk 2077" },
+			{ y: 16,  label: "Bannerlord" },
+			{ y: 16,  label: "Last of Us 2" },
+			{ y: 32,  label: "Doom Ethernal" },
+			{ y: 123,  label: "Ghost of Tsushima" },
+			{ y: 5, label: "Watch Dogs Legion" },
+			
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+
+</head>
+<body>
+ <div class="top-content">
+        
+        	<!-- Top menu -->
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+             
+					<div class="navbar-header">
+
+						<i class="fab fa-playstation fa-3x" style="color:white;"></i>&nbsp &nbsp
+                        <i class="fas fa-gamepad fa-3x" style="color:white;"></i>&nbsp &nbsp
+                        <i class="fab fa-steam fa-3x"style="color:white;"></i>
+
+
+
+
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+
+						</button>
+						
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<div class="collapse navbar-collapse" id="top-navbar-1">
+                        
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li><a href="main.html">Home</a></li>
+							<li><a href="voting.html">Vote</a></li>
+							<li><a href="winners.html">Previouse Winners</a></li>
+							<li><a href="registration.html">Register</a></li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+                     <h1>Greetings Gamers this year we have six contenders for Game of the Year <br>
+                     Vote for your favorite Game this Year </h1>
+                         
+
+                       <div class="list">
+                      	
+
+                           Cyberpunk 2077
+                           <br>
+                      		Mount and Blade Bannerlord
+                      		<br>
+                      		The last of Us 2 
+                      		<br>
+                            Doom Eternal
+                            <br>
+                            Ghost of Tsushima
+                            <br>
+                           Watch Dogs Legion
+                   
+                    </div>
+                    
+                      <div class=" cyberpunk">
+                      	
+                      	        <img src="..\pictures/cyber.jpg"class="img-fluid"  alt="informations cyberpunk" style="width:100%">
+                                    
+                      	        <br>
+                      	        <br>
+                      	        <a href="cyberpunk.html">
+                      	        <button class="brk-btn">
+                     
+                                 Click for more information</button>   
+                             </a>
+                      	    </div>
+                   
+                   <div class="bannerlord">
+                      	
+                      	        <img src="..\pictures/bannerlord2.jpg"class="img-fluid"  alt="informations bannerlord" style="width:100%">
+                      	        <br>
+                      	        <br> 
+                      	        <a href="bannerlord.html">
+                      	        <button class="brk-btn">
+                                   
+                                 Click for more information</button>   
+                             </a>
+                      	    </div>
+
+                      	     <div class="tlou2">
+                      	
+                      	        <img src="..\pictures\last.jpg"class="img-fluid"  alt="informations the last of us 2" style="width:100%">
+                      	        <br>
+                      	        <br>
+                      	        <a href="tlou2.html">
+                      	        <button class="brk-btn">
+
+                                 Click for more information</button>   
+                             </a>
+                      	    </div>
+
+                      	     <div class="eternal">
+                      	
+                      	        <img src="..\pictures\eternal.jpg"class="img-fluid"  alt="informations  doom eternal" style="width:100%">
+                      	        <br>
+                      	        <br>
+                      	        <a href="doom.html">
+                      	        <button class="brk-btn">
+
+                                 Click for more information</button>   
+                             </a>
+                      	    </div>
+                            
+                            <div class="ghost">
+                            	<img src="..\pictures\ghost.png"class="img-fluid"  alt="informations  Ghost of Tsushima" style="width:100%">
+                      	        <br>
+                      	        <br>
+                      	        <a href="ghost.html">
+                      	        <button class="brk-btn">
+
+                                 Click for more information</button>   
+                             </a>
+                      	    </div>
+
+                      	    <div class="legion">
+                      	    	<img src="..\pictures\legion.png"class="img-fluid"  alt="informations  Watch Dogs Legion" style="width:100%">
+                      	        <br>
+                      	        <br>
+                                <a href="legion.html">
+                      	        <button class="brk-btn">
+
+                                 Click for more information</button>   
+                               </a>
+                      	    </div>
+
+                          <div class="chart">
+                       <div id="chartContainer"></div>
+                         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                     </div>
+</body>
+</html>

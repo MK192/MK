@@ -1,0 +1,101 @@
+
+body{
+background-image: url("../banner2.jpg");
+
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Roboto', sans-serif;
+
+ 
+}
+
+.underlined-a {
+  text-decoration: none;
+  color: aqua;
+  padding-bottom: 0.15em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.2em 0 aqua;
+  transition: 0.2s;
+  &:hover {
+    color: #222;
+    box-shadow: inset 0 -2em 0 aqua;
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+.brk-btn {
+  position: relative;
+  background: none;
+  color: aqua;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid aqua;
+  padding: 0.5em 1em;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: #222;
+    height: 0.3em;
+    right: 20%;
+    top: -0.21em;
+    transform: skewX(-45deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: #222;
+    height: 0.3em;
+    left: 20%;
+    bottom: -0.25em;
+    transform: skewX(45deg);
+    -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  &:hover {
+    &::before {
+      right: 80%;
+    }
+    &::after {
+      left: 80%;
+    }
+  }
+}
+.text{
+   color:white;
+ padding: 80px;
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 27px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: white;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+text-align: left;
+ text-shadow: 2px 2px 5px #ff3300;
+
+
+}
+.linkovi{
+ 
+ padding: 10px;
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 35px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: grey;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+}

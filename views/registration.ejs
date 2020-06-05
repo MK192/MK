@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration</title>
+       
+ 
+       <link rel="stylesheet"href="bootstrap/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet"href="css/style.css" type="text/css">
+        <link rel="stylesheet"href="css/registration.css"type="text/css">
+       
+       <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+        <link rel="shortcut icon" href="ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
+
+</head>
+<body style="background-image: url('p5.jpg'); ">
+
+	<div class="top-content">
+        
+        	<!-- Top menu -->
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+             
+					<div class="navbar-header">
+                               <a href="https://www.playstation.com/en-us/">
+						<i class="fab fa-playstation fa-3x" style="color:white;"></i>&nbsp &nbsp</a>
+						<a href="https://www.nintendo.com/">
+                        <i class="fas fa-gamepad fa-3x" style="color:white;"></i>&nbsp &nbsp</a>
+                        <a href="https://store.steampowered.com/">
+                        <i class="fab fa-steam fa-3x"style="color:white;"></i>
+                             </a>
+
+
+
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+
+						</button>
+						
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<div class="collapse navbar-collapse" id="top-navbar-1">
+                        
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li><a href="main">Home</a></li>
+							<li><a href="voting">Vote</a></li>
+							<li><a href="winners">Previouse Winners</a></li>
+							<li><a href="registration">Register</a></li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+	
+
+
+
+
+<div class='container forma'>
+ 
+
+  <div class='row justify-content-start'>
+
+    <div class="col-md-4 col-md-offset-4"> <!-- velicina ekrana -->
+       <form action='/registration' method="POST">
+        
+            <div class="my-5">
+    <h1>Register Account</h1>
+  </div>
+        <div class="form-group">
+          <label for="email"><div class="list">Email</div></label>
+          <input type="email" name="email"class="form-control"placeholder="Enter your email"style="text-align: center;border: 1px solid #ffff00 ;background-color:#0f0f0a;">
+        </div>
+
+        <div class="form-group">
+          <label for="username"><div class="list">Username</div></label>
+          <input type="text" name="username" class="form-control"  placeholder="Enter your username"style="text-align: center;border: 1px solid #ffff00;background-color:#0f0f0a">
+        </div>
+
+        <div class="form-group">
+          <label for="password"><div class="list">Password</div></label>
+          <input type="password" name="password" class="form-control"placeholder="Confirm password"style="text-align: center;border: 1px solid #ffff00;background-color: #0f0f0a">
+        </div>
+
+        <button type="submit" class="brk-btn"style="width: 50%">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+        
+
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

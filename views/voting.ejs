@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vote for Game of the Year</title>
+   <link rel="stylesheet"href="bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+          
+          
+  <link rel="stylesheet"href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+        
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet"href="css/style.css" type="text/css">
+       
+       
+       <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+        <link rel="shortcut icon" href="ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
+        <link href="css/voting.css"rel="stylesheet">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body >
+
+  <div class="top-content">
+        
+        	<!-- Top menu -->
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+             
+					<div class="navbar-header">
+
+						<i class="fab fa-playstation fa-3x" style="color:white;"></i>&nbsp &nbsp
+                        <i class="fas fa-gamepad fa-3x" style="color:white;"></i>&nbsp &nbsp
+                        <i class="fab fa-steam fa-3x"style="color:white;"></i>
+
+
+
+
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+
+						</button>
+						
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<div class="collapse navbar-collapse" id="top-navbar-1">
+                        
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li><a href="main">Home</a></li>
+							<li><a href="voting">Vote</a></li>
+							<li><a href="winners">Previouse Winners</a></li>
+							<li><a href="registration">Register</a></li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+
+<br><br><br><br><br>
+
+<div class='container2'>
+ 
+
+  <div class='row justify-content-start '>
+
+    <div class="col-md-4 col-md-offset-5"> <!-- velicina ekrana -->
+   
+<form method="POST" id="vote" align="left"action="caform"align="middle" onsubmit="voted()">
+    <div class="options">
+  <p>
+    <input type="radio"id="cyber"name="v"value="Cyberpunk">
+
+    <label for="cyber"><span></span>Cyberpunk</label>
+  </p>
+  <p>
+    <input type="radio"id="banner"name="v"value="Bannerlord">
+    <label for="banner"><span></span>Bannerlord</label>
+  </p>
+
+  <p>
+    <input type="radio"id="tlou2"name="v"value="tlou2">
+    <label for="tlou2"><span></span>The Last of Us 2</label>
+  </p>
+
+  <p>
+
+    <input type="radio"id="doom"name="v"value="doom">
+    <label for="doom"><span></span>Doom Ethernal</label>
+  </p>
+
+ 
+  <p>
+    <input type="radio"id="ghost"name="v"value="ghost">
+    <label for="ghost"><span></span>Ghost of Tsushima</label>
+  </p>
+
+
+  <p>
+    <input type="radio"id="wd"name="v"value="wd">
+    <label for=wd><span></span>Watch Dogs Legion</label>
+  </p>
+
+
+  <p>
+    <input type="submit"class="brk-btn"value="Vote"style="width: 30%" id="glasaj">
+  </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+
+</body>
+
+</html>
+
+<script>
+  function voted(){
+    alert('Your vote has been saved!');
+    setTimeout(() => {
+      window.location.href = '/main';
+    }, 1000);
+  }
+</script>
